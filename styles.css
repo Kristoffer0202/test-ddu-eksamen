@@ -1,0 +1,108 @@
+html {
+    margin: 0;
+    overflow: hidden;
+}
+
+.hotbarbox {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 10%;
+    top: 0%;
+    background-color: aqua;
+    border-bottom: 2px solid black;
+}
+
+.title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-20%);
+    font-weight: bold;
+    font-size: 3vh
+}
+a:link { 
+    color: black;
+    text-decoration: none; 
+}
+
+#unitygamelink {
+    position: absolute;
+    left: 25%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+    font-size: 3.5vw;
+
+}
+#unitygamelink:hover {
+    font-size: 4vw;
+}
+
+#p5jsgamelink {
+    position: absolute;
+    right: 25%;
+    top: 80%;
+    transform: translate(50%,-50%);
+    font-size: 3.5vw;
+}
+
+#p5jsgamelink:hover {
+    font-size: 4vw;
+}
+
+.spilboks .unityspilboks {
+    position: absolute;
+    border: 3px solid black;
+    top: 55%;
+    --boxsize: 40%;
+    width: var(--boxsize);
+    height: var(--boxsize);
+    transform: translateY(-50%);
+    left: 5%;
+}
+
+.spilboks .p5spilboks .billede {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.spilboks .p5spilboks {
+    position: absolute;
+    border: 3px solid black;
+    top: 55%;
+    --boxsize: 40%;
+    width: var(--boxsize);
+    height: var(--boxsize);
+    transform: translateY(-50%);
+    right: 5%;
+}
+
+.infoboks .unitytekst {
+    position: absolute;
+    width: 40%;
+    border: 3px solid black;
+    top: 20%;
+    left: 5%;
+}
+
+.infoboks .p5jstekst {
+    position: absolute;
+    width: 40%;
+    border: 3px solid black;
+    top: 20%;
+    right: 5%;  
+}
+
+.spiltekst {
+    font-size:larger;
+    font-weight: 400;
+}
+
+
