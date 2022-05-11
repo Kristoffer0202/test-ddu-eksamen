@@ -82,21 +82,21 @@ function lavScore() {
   textSize(40);
   stroke(0);
   strokeWeight(4);
-  text("Score:" + score, 10, 30); //overloading af plus-operator.
-  text("Hastighed:" + round(hastighedLøsning, 2), 10, 60);
-  text("Antal liv: " + antalLiv, 15, 95);
+  text("Score:" + score, 10, 30+windowHeight*0.05); //overloading af plus-operator.
+  text("Hastighed:" + round(hastighedLøsning, 2), 10, 60+windowHeight*0.05);
+  text("Antal liv: " + antalLiv, 15, 95+windowHeight*0.05);
 
   stroke(255);
   strokeWeight(5);
   noFill();
   rectMode(CENTER); 
-  rect(110,70,310,135);
+  rect(110,70,310,135+windowHeight*0.05);
 
   stroke(0);
   strokeWeight(4);
   noFill();
   rectMode(CENTER); 
-  rect(110,70,310,135);
+  rect(110,70,310,135+windowHeight*0.05);
 }
 
 function GameOver() {
@@ -182,17 +182,17 @@ function tegnOpgave() {
   stroke(255);
   strokeWeight(6);
   noFill();
-  rect(windowWidth - 175, 61,380,120)
+  rect(windowWidth - 175, 61,380,140+windowHeight*0.05)
   strokeWeight(5);
   stroke(0);
   noFill();
-  rect(windowWidth - 175, 61,380,120)
+  rect(windowWidth - 175, 61,380,140+windowHeight*0.05)
   fill("white");
   textAlign(RIGHT, TOP);
   strokeWeight(4);
   textSize(40);
   stroke(0);
-  text("Givet f(x)=" + a + "x+" + b + ".\n Find x så f(x)=" + funktionsværdi + ".", windowWidth - 50, 15);
+  text("Givet f(x)=" + a + "x+" + b + ".\n Find x så f(x)=" + funktionsværdi + ".", windowWidth - 50, 15+windowHeight*0.05);
   
 }
 
